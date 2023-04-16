@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script src="main.js"></script>
 </head>
-<body>
-   <div class="displaynone"> <audio autoplay loop controls> <source src="./Monkeys-Spinning-Monkeys.mp3"></audio>
+<body onclick="document.getElementById( 'audio' ).play();">
+   
+   <div class="displaynone"> <audio id="audio" autoplay loop controls> <source src="./Monkeys-Spinning-Monkeys.mp3"></audio>
    </div>
+   <div class="displaynone"><audio id="audio2"  controls> <source src="./rolling-dice-2-102706.mp3"></audio></div>
 <div class="specialmain" >
     <div class="heading">
 
@@ -24,9 +30,9 @@
         
     <form  class="maincontainer" >
     
-<div class="updice" ><div class="dice" id="first" onclick="first(event);audio.play();"
+<div   class="updice" ><div  class="dice" id="first" onclick="first(event);document.getElementById( 'audio2' ).play();"
     >6</div>
-<div class="dice" id="seconde" onclick="seconde(event)">6</div></div>
+<div class="dice" id="seconde" onclick="seconde(event); document.getElementById( 'audio2' ).play();">6</div></div>
 
         <div class="flex1">
             <span>
@@ -210,15 +216,15 @@
     </div>
     
     <div class="updice">
-        <div class="dice" id="third" onclick="third(event)"> 6 </div>
-        <div class="dice" id="fourth" onclick="fourth(event)">6</div>
+        <div class="dice" id="third" onclick="third(event) ;document.getElementById( 'audio2' ).play(); " > 6 </div>
+        <div class="dice" id="fourth" onclick="fourth(event);document.getElementById( 'audio2' ).play();">6</div>
     </div>
     
     
 </form>
     
     
-    <div class="buuton"><button>play now</button>
+    <div class="buuton"><button> click to play </button>
     </div>
 </div>
 
